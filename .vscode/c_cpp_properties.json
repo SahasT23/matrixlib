@@ -1,22 +1,16 @@
 {
   "configurations": [
     {
-      "name": "linux-gcc-x64",
+      "name": "windows-gcc-x64",
       "includePath": [
-        "${workspaceFolder}/**",
-        "/home/sahast/miniconda3/include/python3.13",
-        "/home/sahast/miniconda3/lib/python3.13/site-packages/pybind11/include"
+        "${workspaceFolder}/**"
       ],
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "c11",
-      "cppStandard": "c++17",
-      "intelliSenseMode": "linux-gcc-x64",
+      "compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "windows-gcc-x64",
       "compilerArgs": []
     }
   ],
   "version": 4
 }
-// This file is used by VS Code to configure the C++ IntelliSense engine.
-// It specifies the include paths, compiler settings, and other configurations needed for C++ development.
-// The paths to Python and Pybind11 are included to ensure that the C++ code can
-// interface correctly with Python, especially when using Pybind11 for binding C++ code to Python
