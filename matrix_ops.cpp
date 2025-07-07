@@ -1,3 +1,7 @@
+// This file implements a simple matrix operations library in C++
+// that includes matrix multiplication, determinant calculation, and matrix inversion.
+// It also provides vector operations like dot product and cross product.
+
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
 #include <pybind11/numpy.h>
@@ -6,6 +10,21 @@
 #include <cmath>
 
 namespace py = pybind11;
+
+/*
+This code implements a simple matrix operations library in C++.
+The class `Matrix` supports basic operations such as:
+- Matrix multiplication
+- Determinant calculation
+- Matrix inversion using Gauss-Jordan elimination
+It also provides vector operations like dot product and cross product.
+The library is designed to be used with Python through pybind11,
+allowing users to create matrices, perform operations, and retrieve results in a Python-friendly format.
+The `Matrix` class can be initialized with a specific size or with a 2D vector,
+and it provides methods to access elements, get dimensions, and perform operations.
+The library is intended for educational purposes and basic numerical computations,
+and it includes error handling for invalid operations such as dimension mismatches and singular matrices.
+*/
 
 class Matrix {
 private:
